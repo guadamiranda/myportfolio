@@ -1,0 +1,42 @@
+@import '../../../Variables/colors.module.scss';
+
+.infiniteScrollContainer{
+    color: $pink;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    width: 500px;
+
+    &_opacity{
+        position: absolute; 
+        z-index: 9999;
+        height: 100%;
+        width: 100%;
+    }
+
+    &_listContainer{
+        position: relative; 
+        z-index: 2;
+    }
+
+    &_items{
+        display: flex;
+        font-size: 30px;
+        height: 50px;
+        width: 50px;
+    }
+
+    &_items:first-child{
+        animation: bannermove 80s linear infinite;
+    }
+}
+
+@keyframes bannermove {
+    0% {
+     margin-left: 0px;
+     transform: translateX(0);
+    }
+    100% {
+       margin-left: -2125px;
+    }
+}

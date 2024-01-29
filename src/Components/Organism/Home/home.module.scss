@@ -1,0 +1,22 @@
+@import '../../../Variables/colors.module.scss';
+@import '../../../Variables/fonts.module.scss';
+
+.HomeComponentContainer{
+
+    &_opacity{
+        background-color: rgba(49, 49, 49, 0.74);
+        height: 100%;
+        width: 100%;
+    }
+
+    &_body{
+        height: 100%;
+        width: 100%;
+    }
+
+    &_subTitule{
+        color: white;
+        font-family: $montserrat;
+        font-weight: 300;
+    }
+}

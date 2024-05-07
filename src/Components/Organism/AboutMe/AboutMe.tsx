@@ -1,5 +1,6 @@
 import InfiniteScroll from "@/Components/Atoms/InfiniteScroll/InfiniteScroll";
 import ImageContainer from "@/Components/Atoms/ImageContainer/ImageContainer";
+// @ts-ignore
 import rin from "../../../../public/Assets/Images/rin2.PNG";
 import { SiGamebanana } from "react-icons/si";
 import { PiMedalLight } from "react-icons/pi";

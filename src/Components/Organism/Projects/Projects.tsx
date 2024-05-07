@@ -1,6 +1,9 @@
+// @ts-ignore
 import myvideogame from '../../../../public/Assets/Images/myvideogamelist.PNG';
+// @ts-ignore
 import michivision from '../../../../public/Assets/Images/michivision2.PNG';
 import balneario from '../../../../public/Assets/Images/balnearioapp.jpg';
+// @ts-ignore
 import pokedex from '../../../../public/Assets/Images/pokedex2.PNG';
 import OtherTitule from "../../Atoms/OtherTitle/OtherTitle";
 import Card from "@/Components/Atoms/Card/Card";
@@ -60,7 +63,7 @@ const Projects: React.FC<ProjectsInterface> = ({ isDark }) => {
     >
       <OtherTitule />
       <div
-        className={`${style.projectsContainer_cardsContainer} d-flex align-items-center justify-content-center flex-wrap gap-3`}
+        className={`${style.projectsContainer_cardsContainer} d-flex align-items-center justify-content-center flex-wrap gap-3 mb-3`}
       >
         {allProjects.map((project) => (
           <Card

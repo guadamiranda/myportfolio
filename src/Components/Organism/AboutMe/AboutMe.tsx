@@ -8,12 +8,13 @@ import style from "./aboutMe.module.scss";
 import { CiStar } from "react-icons/ci";
 
 interface AboutMeInterface {
+  ref: any;
   isDark: boolean;
 }
 
-const AboutMe: React.FC<AboutMeInterface> = ({ isDark }) => {
+const AboutMe: React.FC<AboutMeInterface> = ({ ref, isDark }) => {
   return (
-    <div
+    <div ref={ref}
       className={`${style.aboutMeContainer} d-flex justify-content-center align-items-center flex-column`}
     >
       <div className={`d-flex flex-row align-items-center gap-5`}>

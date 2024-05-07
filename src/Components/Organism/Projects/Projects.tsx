@@ -10,6 +10,7 @@ import Card from "@/Components/Atoms/Card/Card";
 import style from "./projects.module.scss";
 
 interface ProjectsInterface {
+  ref: any,
   isDark: boolean;
 }
 
@@ -31,7 +32,7 @@ const allProjects = [
       "Aplicación para buscar Pokemon desde una pokedex.",
     img: pokedex.src,
     repository: 'https://github.com/guadamiranda/pokedex',
-    url: '',
+    url: 'https://portfoliopokedex.netlify.app',
     tools: ["HTML", "SCSS", "TypeScript", "React"]
   },
   {
@@ -56,9 +57,9 @@ const allProjects = [
   },
 ];
 
-const Projects: React.FC<ProjectsInterface> = ({ isDark }) => {
+const Projects: React.FC<ProjectsInterface> = ({ ref, isDark }) => {
   return (
-    <div
+    <div ref={ref}
       className={`${style.projectsContainer} d-flex align-items-center justify-content-center flex-column`}
     >
       <OtherTitule />

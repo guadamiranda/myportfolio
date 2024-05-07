@@ -24,7 +24,7 @@ const Page = () => {
             <HomeComponent isDark={isDark}/>
             <AboutMe isDark={isDark}/>  
             <Divisor image={image.src}/>
-            <Projects />
+            <Projects isDark={isDark}/>
         </div>
     )
 }

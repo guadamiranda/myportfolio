@@ -1,13 +1,17 @@
 import style from './card.module.scss'
-import img from '../../../../public/Assets/Images/balnearionogales.jpg'
+import imgage from '../../../../public/Assets/Images/balnearionogales.jpg'
 
-const Card = () => {
+interface CardInterface {
+    img: string,
+    title: string,
+    description: string,
+    isDark: boolean
+}
+
+const Card: React.FC<CardInterface> = ({img, title, description, isDark}) => {
     return(
-        <div className={style.cardContainer}>
-            <div className={style.cardContainer_container} style={{height: '100%', width: '100%', backgroundImage: `url(${img.src})`, backgroundSize: 'cover'}}>
-                <div className={style.cardContainer_top}></div>
-                <div className={style.cardContainer_bottom}></div>
-            </div>
+        <div className={style.cardContainer} style={{backgroundColor: isDark? '#3e3e3e' : '#e1e0e0'}}>
+
         </div>
     )
 }

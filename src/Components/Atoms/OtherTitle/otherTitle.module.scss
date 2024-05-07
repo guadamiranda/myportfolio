@@ -2,6 +2,7 @@
 @import '../../../Variables/fonts.module.scss';
 
 .typewriter h1 {
+    color: #E46F80;
     font-family: $montserrat;
     font-weight: 400;
     overflow: hidden;
@@ -9,6 +10,7 @@
     white-space: nowrap;
     margin: 0 auto; 
     letter-spacing: .15em; 
+    font-size: 52px;
     animation: 
       typing 2.5s steps(20, end),
       blink-caret .5s step-end infinite;

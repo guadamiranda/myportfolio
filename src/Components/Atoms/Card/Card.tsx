@@ -1,3 +1,4 @@
+import Pin from '../Pin/Pin'
 import style from './card.module.scss'
 
 interface CardInterface {
@@ -16,7 +17,9 @@ const Card: React.FC<CardInterface> = ({img, title, description, isDark, url, re
     return(
         <div className={style.cardContainer} style={{backgroundColor: isDark? '#3e3e3e' : '#e1e0e0'}}>
             <div className={style.cardContainer__head} >
-                <div style={{height: '100%', width: '100%', backgroundImage: `url(${img})`, backgroundSize: 'cover'}}></div>
+                <div style={{height: '100%', width: '100%', backgroundImage: `url(${img})`, backgroundSize: 'cover', display: 'flex', alignItems: 'end', justifyContent: 'flex-end'}}>
+                    {tools.map((tool:string) => <Pin title={tool}/>)}
+                </div>
             </div>
             <div className={style.cardContainer__text}>
                 <div>

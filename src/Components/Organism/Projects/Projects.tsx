@@ -40,6 +40,16 @@ const allProjects = [
     url: '',
     tools: ["HTML", "SCSS", "TypeScript", "React"]
   },
+  {
+    title: "Mi Listado APP",
+    state: "En Proceso",
+    description:
+      "Aplicación para listar los videojuegos que ya has terminado.",
+    img: balneario.src,
+    repository: 'https://github.com/guadamiranda/videogamelistproject',
+    url: '',
+    tools: ["HTML", "CSS", "TypeScript", "NEXT", "Node", "Express"]
+  },
 ];
 
 const Projects: React.FC<ProjectsInterface> = ({ isDark }) => {

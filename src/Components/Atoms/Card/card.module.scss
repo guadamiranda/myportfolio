@@ -21,12 +21,18 @@
     padding: 13px 13px;
     width: 100%;
 
+    &__state{
+        color: #92929281;
+        font-size: 15px;
+    }
+
     &__title {
       color: #e46f80;
       display: flex;
       justify-content:space-between;
       font-size: 20px;
       border-bottom: 1px solid rgb(173, 173, 173);
+      align-items: flex-end
     }
 
     &__description {

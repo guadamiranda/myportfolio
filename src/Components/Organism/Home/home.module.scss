@@ -1,22 +1,34 @@
-@import '../../../Variables/colors.module.scss';
-@import '../../../Variables/fonts.module.scss';
+@import "../../../Variables/colors.module.scss";
+@import "../../../Variables/fonts.module.scss";
 
-.HomeComponentContainer{
+.HomeComponentContainer {
+  &_opacity {
+    background-color: rgba(49, 49, 49, 0.74);
+    height: 100%;
+    width: 100%;
+  }
 
-    &_opacity{
-        background-color: rgba(49, 49, 49, 0.74);
-        height: 100%;
-        width: 100%;
+  &_body {
+    height: 100%;
+    width: 100%;
+  }
+
+  &_subTitule {
+    color: white;
+    font-family: $montserrat;
+    font-weight: 300;
+  }
+
+  &_linkedInIcon {
+    color: #e46f80;
+    cursor: pointer;
+    font-size: 30px;
+    margin-top: 10px;
+    transition: 0.3s;
+
+    &:hover {
+      color: #c55263;
+      transition: 0.3s;
     }
-
-    &_body{
-        height: 100%;
-        width: 100%;
-    }
-
-    &_subTitule{
-        color: white;
-        font-family: $montserrat;
-        font-weight: 300;
-    }
+  }
 }

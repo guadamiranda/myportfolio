@@ -1,4 +1,5 @@
-import style from './pin.module.scss'
+import { FaTag } from "react-icons/fa";
+import style from './pin.module.scss';
 
 interface PinProps {
     title: string;
@@ -7,7 +8,7 @@ interface PinProps {
 const Pin: React.FC<PinProps> = ({ title }) => {
     return (
         <div className={style.pinContainer}>
-            {title}
+            <FaTag className={style.pinContainer__icon}/>{title}
         </div>
     );
 };

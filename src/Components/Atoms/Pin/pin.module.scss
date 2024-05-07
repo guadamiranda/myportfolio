@@ -5,4 +5,12 @@
     padding: 1px 4px;
     margin-bottom: 3px;
     margin-right: 3px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+
+    &__icon{
+        font-size: 10px;
+        margin-right: 3px;
+    }
 }

@@ -1,5 +1,5 @@
-import Pin from '../Pin/Pin'
-import style from './card.module.scss'
+import style from './card.module.scss';
+import Pin from '../Pin/Pin';
 
 interface CardInterface {
     img: string,
@@ -13,7 +13,7 @@ interface CardInterface {
 }
 
 const Card: React.FC<CardInterface> = ({img, title, description, isDark, url, repository, tools, state}) => {
-    console.log(img)
+
     return(
         <div className={style.cardContainer} style={{backgroundColor: isDark? '#3e3e3e' : '#e1e0e0'}}>
             <div className={style.cardContainer__head} >

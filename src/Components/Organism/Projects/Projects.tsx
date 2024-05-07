@@ -1,6 +1,7 @@
+import myvideogame from '../../../../public/Assets/Images/myvideogamelist.PNG';
 import michivision from '../../../../public/Assets/Images/michivision2.PNG';
-import pokedex from '../../../../public/Assets/Images/pokedex2.PNG';
 import balneario from '../../../../public/Assets/Images/balnearioapp.jpg';
+import pokedex from '../../../../public/Assets/Images/pokedex2.PNG';
 import OtherTitule from "../../Atoms/OtherTitle/OtherTitle";
 import Card from "@/Components/Atoms/Card/Card";
 import style from "./projects.module.scss";
@@ -45,7 +46,7 @@ const allProjects = [
     state: "En Proceso",
     description:
       "Aplicación para listar los videojuegos que ya has terminado.",
-    img: balneario.src,
+    img: myvideogame.src,
     repository: 'https://github.com/guadamiranda/videogamelistproject',
     url: '',
     tools: ["HTML", "CSS", "TypeScript", "NEXT", "Node", "Express"]

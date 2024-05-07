@@ -28,8 +28,8 @@ const Card: React.FC<CardInterface> = ({img, title, description, isDark, url, re
                 </div>
                 <div>
                     <div className={style.cardContainer__text__buttonContainer}>
-                        {repository && <button className={style.cardContainer__button}>Repositorio</button>}
-                        {url && <button className={style.cardContainer__button}>Demo</button>}
+                        {repository && <button onClick={() => window.open(repository, '_blink')} className={style.cardContainer__button}>Repositorio</button>}
+                        {url && <button onClick={() => window.open(url, '_blink')} className={style.cardContainer__button}>Demo</button>}
                     </div>
                 </div> 
             </div>

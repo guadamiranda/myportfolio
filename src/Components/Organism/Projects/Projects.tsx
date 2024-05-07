@@ -22,7 +22,7 @@ const allProjects = [
     tools: ["HTML", "SCSS", "TypeScript" , "React"]
   },
   {
-    title: "Pokedex",
+    title: "Pokedex Virtual",
     state: "Finalizado",
     description:
       "Aplicación para buscar Pokemon desde una pokedex.",
@@ -32,7 +32,7 @@ const allProjects = [
     tools: ["HTML", "SCSS", "TypeScript", "React"]
   },
   {
-    title: "Balneario APP",
+    title: "Camping los Nogales APP",
     state: "Finalizado",
     description:
       "Aplicación para el Camping Los Nogales para registrar estadías.",
@@ -42,14 +42,14 @@ const allProjects = [
     tools: ["HTML", "SCSS", "TypeScript", "React"]
   },
   {
-    title: "Mi Listado APP",
+    title: "GameAtlas (WIP)",
     state: "En Proceso",
     description:
       "Aplicación para listar los videojuegos que ya has terminado.",
     img: myvideogame.src,
     repository: 'https://github.com/guadamiranda/videogamelistproject',
     url: '',
-    tools: ["HTML", "CSS", "TypeScript", "NEXT", "Node", "Express"]
+    tools: ["HTML", "CSS", "TypeScript", "React", "Node", "Express"]
   },
 ];
 

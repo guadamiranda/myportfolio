@@ -1,17 +1,14 @@
 'use client'
 
+import image from '../../../../public/Assets/Images/WallpaperDog-20463686.jpg';
 import ThemeSwitch from '@/Components/Atoms/ThemeSwitch/ThemeSwitch';
 import PageNavigator from '@/Components/Atoms/Navigator/Navigator';
+import Divisor from '@/Components/Atoms/Divisor/Divisor';
 import { ThemeContext } from '@/contexts/themes';
+import Projects from '../Projects/Projects';
 import AboutMe from '../AboutMe/AboutMe';
 import HomeComponent from '../Home/Home';
-import style from './page.module.scss';
 import { useContext } from 'react';
-import Divisor from '@/Components/Atoms/Divisor/Divisor';
-import image from '../../../../public/Assets/Images/WallpaperDog-20463686.jpg'
-import Projects from '../Projects/Projects';
-
-
 
 const Page = () => {
     const data = [{name: 'Home'}, {name: 'Sobre Mi'}, {name: 'Proyectos'}]

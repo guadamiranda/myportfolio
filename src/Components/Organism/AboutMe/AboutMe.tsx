@@ -22,7 +22,7 @@ const AboutMe: React.FC<AboutMeInterface> = ({ isDark }) => {
           className={`${style.aboutMeContainer_text} d-flex justify-content-center flex-column gap-3`}
         >
           <div
-            className={`${style.aboutMeContainer_texts} d-flex justify-content-evenly align-items-center flex-row gap-3`}
+            className={`${style.aboutMeContainer_texts} d-flex align-items-center flex-row`}
           >
             <div
               className={`${style.aboutMeContainer_textContainer} d-flex justify-content-center align-items-center flex-column`}

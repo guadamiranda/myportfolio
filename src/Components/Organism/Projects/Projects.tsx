@@ -10,7 +10,6 @@ import Card from "@/Components/Atoms/Card/Card";
 import style from "./projects.module.scss";
 
 interface ProjectsInterface {
-  ref: any,
   isDark: boolean;
 }
 
@@ -57,17 +56,18 @@ const allProjects = [
   },
 ];
 
-const Projects: React.FC<ProjectsInterface> = ({ ref, isDark }) => {
+const Projects: React.FC<ProjectsInterface> = ({isDark }) => {
   return (
-    <div ref={ref}
+    <div
       className={`${style.projectsContainer} d-flex align-items-center justify-content-center flex-column`}
     >
       <OtherTitule />
       <div
         className={`${style.projectsContainer_cardsContainer} d-flex align-items-center justify-content-center flex-wrap gap-3 mb-3`}
       >
-        {allProjects.map((project) => (
-          <Card
+        {allProjects.map((project, index) => (
+            <Card
+            key={index}
             isDark={isDark}
             img={project.img}
             title={project.title}

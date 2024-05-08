@@ -22,9 +22,9 @@ const Page = () => {
       <ThemeSwitch changeState={toggleTheme} isDark={isDark} />
       <PageNavigator homeRef={homeRef} aboutMeRef={aboutMeRef} skillsRef={skillsRef} options={data} color={theme.color} />
       <div ref={homeRef}><HomeComponent  isDark={isDark} /></div>
-      <div ref={aboutMeRef}><AboutMe ref={aboutMeRef} isDark={isDark} /></div>
+      <div ref={aboutMeRef}><AboutMe isDark={isDark} /></div>
       <Divisor image={image.src} />
-      <div ref={skillsRef}><Projects ref={skillsRef} isDark={isDark} /></div>
+      <div ref={skillsRef}><Projects isDark={isDark} /></div>
     </div>
   );
 };

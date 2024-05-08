@@ -9,7 +9,6 @@ const InfiniteScroll: React.FC<InfiniteScrollInterface> = ({isDark}) => {
     const whiteGradiant = 'radial-gradient(circle, rgba(0,0,0,0) 63%, rgba(255,255,255,1) 100%)'
     const blackGradiant = 'radial-gradient(circle, rgba(0,0,0,0) 63%, #100c0c 100%)'
 
-    console.log(isDark)
     return(
         <div className={`${style.infiniteScrollContainer} d-flex`}>
             <div className={`${style.infiniteScrollContainer_opacity} d-flex`} 

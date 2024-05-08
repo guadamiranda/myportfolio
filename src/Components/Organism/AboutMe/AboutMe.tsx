@@ -8,13 +8,12 @@ import style from "./aboutMe.module.scss";
 import { CiStar } from "react-icons/ci";
 
 interface AboutMeInterface {
-  ref: any;
   isDark: boolean;
 }
 
-const AboutMe: React.FC<AboutMeInterface> = ({ ref, isDark }) => {
+const AboutMe: React.FC<AboutMeInterface> = ({ isDark }) => {
   return (
-    <div ref={ref}
+    <div
       className={`${style.aboutMeContainer} d-flex justify-content-center align-items-center flex-column`}
     >
       <div className={`d-flex flex-row align-items-center gap-5`}>
@@ -46,7 +45,7 @@ const AboutMe: React.FC<AboutMeInterface> = ({ ref, isDark }) => {
               </span>
               <span>Completados</span>
               <span className={style.aboutMeContainer_subtitule}>
-                1 + proyecto
+                3 + proyecto
               </span>
             </div>
             <div

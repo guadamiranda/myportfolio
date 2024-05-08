@@ -12,13 +12,13 @@ interface CardInterface {
     tools: any
 }
 
-const Card: React.FC<CardInterface> = ({img, title, description, isDark, url, repository, tools, state}) => {
+const Card: React.FC<CardInterface> = ({img, title, description, isDark, url, repository, tools, state }) => {
 
     return(
         <div className={style.cardContainer} style={{backgroundColor: isDark? '#3e3e3e' : '#e1e0e0'}}>
             <div className={style.cardContainer__head} >
                 <div style={{height: '100%', width: '100%', backgroundImage: `url(${img})`, backgroundSize: 'cover', display: 'flex', alignItems: 'end', justifyContent: 'flex-end'}}>
-                    {tools.map((tool:string) => <Pin title={tool}/>)}
+                    {tools.map((tool:string, index:number) => <Pin key={index} title={tool}/>)}
                 </div>
             </div>
             <div className={style.cardContainer__text}>

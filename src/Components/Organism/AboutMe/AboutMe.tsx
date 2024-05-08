@@ -35,7 +35,7 @@ const AboutMe: React.FC<AboutMeInterface> = ({ isDark }) => {
               <span>
                 <b>Experiencia</b>
               </span>
-              <span className={style.aboutMeContainer_subtitule}>1 + año</span>
+              <span className={style.aboutMeContainer_subtitule}>7 meses</span>
             </div>
             <div
               className={`${style.aboutMeContainer_textContainer} d-flex justify-content-center align-items-center flex-column`}
